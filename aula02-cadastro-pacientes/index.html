@@ -40,9 +40,14 @@
     <h2 class="h4 mb-3">Pacientes cadastrados</h2>
 
     <!-- Mensagem de carregamento, visível enquanto os dados não chegam -->
-    <p id="carregando" class="text-muted">Carregando pacientes...</p>
+    <p id="carregando" class="text-muted" role="status" aria-live="polite">Carregando pacientes...</p>
 
-    <table class="table table-striped">
+    <div aria-live="polite">
+      <p id="contador-json">Pacientes do JSON: 0</p>
+      <p id="contador-manual">Cadastrados nesta sessão: 0</p>
+    </div>
+    <p id="lista-vazia" hidden>Nenhum paciente cadastrado ainda</p>
+    <table id="lista-pacientes" class="table table-striped" hidden>
       <thead>
         <tr>
           <th>Nome</th>

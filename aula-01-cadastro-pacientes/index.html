@@ -29,6 +29,10 @@
         <input type="email" class="form-control" id="email" required>
       </div>
 
+      <div class="col-md-4">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" id="telefone" required>
+      </div>
       <div class="col-md-3">
         <label for="nascimento" class="form-label">Data de nascimento</label>
         <input type="date" class="form-control" id="nascimento" required>
@@ -39,20 +43,30 @@
       </div>
     </form>
 
+    <p id="aviso" role="status" class="text-danger"></p>
     <!-- Tabela de pacientes -->
     <h2 class="h4 mb-3">Pacientes cadastrados</h2>
+    <p id="total-pacientes" aria-live="polite">Total de pacientes: 0</p>
+    <label for="busca" class="form-label">Buscar paciente pelo nome</label>
+    <input type="search" id="busca" class="form-control mb-3">
+    <p id="sem-resultados" hidden>Nenhum paciente encontrado.</p>
+    <div class="table-responsive">
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>Nome</th>
+          <th id="cabecalho-nome" aria-sort="none"><button type="button" id="ordenar-nome" class="btn btn-link p-0">Nome ↕</button></th>
           <th>E-mail</th>
+          <th>Telefone</th>
           <th>Data de nascimento</th>
+          <th>Idade</th>
+          <th>Ações</th>
         </tr>
       </thead>
       <tbody id="tabela-pacientes">
         <!-- Linhas geradas dinamicamente via JavaScript -->
       </tbody>
     </table>
+    </div>
   </div>
 
   <script src="js/app.js"></script>

@@ -1,6 +1,6 @@
 // Local: http://localhost:3000/pacientes
 // Após publicar o backend no Render, substitua a URL pela pública da API.
-const URL_API = 'http://localhost:3000/pacientes';
+const URL_API = 'https://api-pacientes-damascena.onrender.com/pacientes';
 
 const pacientes = [];
 const formulario = document.getElementById('form-paciente');
@@ -8,7 +8,7 @@ const tabela = document.getElementById('tabela-pacientes');
 const mensagemCarregando = document.getElementById('carregando');
 const tabelaCompleta = document.getElementById('lista-pacientes');
 const listaVazia = document.getElementById('lista-vazia');
-
+git add aula03-primeiro-server/frontend/js/app.js
 function adicionarPaciente(nome, email, nascimento, origem = 'manual') {
   pacientes.push({ nome, email, nascimento, origem });
 }

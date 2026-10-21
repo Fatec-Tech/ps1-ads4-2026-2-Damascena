@@ -34,5 +34,5 @@ const servidor = http.createServer((req, res) => {
 // O Render define PORT automaticamente; localmente usamos 3000.
 const PORTA = Number(process.env.PORT) || 3000;
 servidor.listen(PORTA, '0.0.0.0', () => {
-  console.log(`Servidor rodando na porta ${PORTA}`);
+  console.log(`Servidor rodando em https://app-clinica-9uuj.onrender.com/);
 });

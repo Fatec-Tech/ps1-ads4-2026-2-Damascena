@@ -8,7 +8,7 @@ const tabela = document.getElementById('tabela-pacientes');
 const mensagemCarregando = document.getElementById('carregando');
 const tabelaCompleta = document.getElementById('lista-pacientes');
 const listaVazia = document.getElementById('lista-vazia');
-git add aula03-primeiro-server/frontend/js/app.js
+
 function adicionarPaciente(nome, email, nascimento, origem = 'manual') {
   pacientes.push({ nome, email, nascimento, origem });
 }

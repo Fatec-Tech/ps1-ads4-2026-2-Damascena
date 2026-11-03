@@ -1,0 +1,9 @@
+body { background: #f8f9fa; color: #212529; }
+main { max-width: 1180px; }
+#mensagem:empty { display: none; }
+.table th, .table td { vertical-align: middle; }
+.table td:last-child { white-space: nowrap; }
+@media (max-width: 576px) {
+  .table td:last-child { white-space: normal; }
+  .table td button { margin-bottom: .25rem; }
+}
